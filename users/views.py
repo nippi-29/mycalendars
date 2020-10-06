@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
-def index(request):
-  return
+
+def new(request):
+  params = {'message': 'newです'}
+  return render(request, 'users/new.html', params)
